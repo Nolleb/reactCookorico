@@ -1,0 +1,20 @@
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    
+    background: $color-dark-1;
+    display: flex;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-basis: 33.33%;
+        align-items: center;
+    }
+    &__item {
+        line-height: 2;
+    }
+}

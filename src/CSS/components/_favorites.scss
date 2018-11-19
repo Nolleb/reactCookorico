@@ -1,0 +1,17 @@
+.favorites {
+    border-radius: 4px;
+    background: $color-warning;
+    padding: 0.3rem;
+    border: 2px solid $color-warning;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+  
+  &:hover {
+    background: $color-white;
+    border: 2px solid $color-warning;
+  }
+}

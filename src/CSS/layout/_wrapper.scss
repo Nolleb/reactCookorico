@@ -1,0 +1,36 @@
+.wrapper {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px, rgba(0, 0, 0, 0.2) 0px 0px 1px;
+  /*background-image: url(http://via.placeholder.com/800x650);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;*/
+
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+    &--home{
+        flex-basis: 85%;
+        background: $color-white;
+        display: flex;
+        flex-direction: column;
+    }
+    &--connexion {
+        display: block;
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+        margin:0;
+        overflow: initial;
+    }
+}

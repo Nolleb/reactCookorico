@@ -1,0 +1,41 @@
+.list-items {
+    background: lighten(#1ce, 45%);
+    opacity: 1;
+    //border: 1px solid red;
+    flex-shrink: 1;
+    flex-grow: 1;
+    position: relative;
+    
+    &__background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+        &:empty{
+           // background: none !important;
+            //opacity: 1 !important;
+        }
+    }
+    
+    &__inner.container {
+        padding: 5px;
+    }
+    
+    &__inner:empty{
+        padding: 0 !important;
+    }
+    
+    &__inner {
+   
+        display: flex;
+        flex-wrap: wrap;
+        background: $color-white;
+        
+        & > * {
+          margin: 10px;
+          flex: 0 0 calc(20% - 20px);
+        }
+    }
+}

@@ -1,0 +1,152 @@
+.btn {
+    background-color: $color-warning;
+    border: 2px solid $color-warning;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    line-height: 0;
+    transition: all .3s;
+    outline: none;
+    .form-container--connexion &{
+        padding: 20px 0;
+        width: 25%;
+        color: $color-white;
+    }
+    &.btn-supp{
+        color: $color-white;
+    }
+    &.btn-connexion {
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        width: 100px;
+        &:hover {
+            box-shadow: none;
+        }
+    }
+    .login &{
+        margin: 5px;
+        width: 25%;
+        color: $color-white;
+    }
+    &.btn-github{
+        background: $color-github;
+    }
+    &.btn-facebook{
+        background: $color-facebook;
+    }
+    &.btn-google{
+        background: $color-google;
+    }
+    
+    &.btn-submit{
+        background-color: $color-validation;
+        border: 2px solid $color-validation;
+        padding: 5px;
+        width: auto;
+        color: $color-white;
+        font-weight: bold;
+        margin: auto;
+        display: flex;
+        transition: all .2s;
+        
+        &--change {
+            background-color: $color-modification;
+            border: 2px solid $color-modification;
+        }
+        
+        &:hover {
+            
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+            transform: translateY(0);
+        }
+        
+    }
+    &.active {
+        background-color: $color-white;
+        border: 2px solid $color-warning;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-white;
+        display: inline-block;
+        text-decoration: none;
+        //border-bottom: 1px solid $color-white;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-warning;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        border-radius: 4px;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+.btn-logout {
+    color: $color-white;
+    width: 40px;
+    line-height: 1.2;
+    padding: .5rem;
+}
+
+.btn-text--add {
+    &:link,
+    &:visited {
+        color: $color-validation;
+    }
+    &:hover {
+        background-color: $color-validation;
+        color: $color-white;
+    }
+}
+
+.btn-text-remove {
+    &:link,
+    &:visited {
+        color: $color-warning;
+    }
+     &:hover {
+        color: $color-white;
+    }
+    align-self: flex-end;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    .input-field__inner--step-0 &, .input-field__inner--ing-0 &{
+        display: none;
+    }
+}
+.btn-supp:last-child {
+    margin-left: 15px;
+}
+.btn-modal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -15px;
+    right: -15px;
+}
+.btn-footer{
+    width: 100%;
+    color: $color-white;
+    border-radius:0;
+}

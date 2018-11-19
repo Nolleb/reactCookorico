@@ -1,0 +1,25 @@
+.suggestions {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 50;
+    
+    &__highlight {
+        background: $color-warning;
+        color: $color-white;
+    }
+    &__name {
+        
+    }
+    & > li {
+        background: $color-white;
+        list-style: none;
+        border-bottom: 1px solid #D8D8D8;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.14);
+        margin: 0;
+        padding: 10px;
+        transition: background 0.2s;
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+}

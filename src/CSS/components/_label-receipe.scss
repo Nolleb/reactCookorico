@@ -1,0 +1,128 @@
+.label-receipe {
+  position: relative;
+  z-index:10;
+  background : $color_white;
+  border-radius: 4px;
+  width: 210px;
+  display: flex;
+  flex-grow: 0;
+  flex-direction: column;
+  padding: 1rem;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   
+  &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  &__img {
+    display: block;
+    height: 200px;
+  }
+  
+  &__top {
+    transform: skewY(10deg);
+    background: white;
+    margin-top: -70px;
+    height: 50px;
+    & > * {
+      transform: skewY(-10deg);
+    }  
+  }
+  
+  &__bottom {
+    position: relative;
+    z-index: 1;
+    background: white;
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: -33px;
+    
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+  }
+  
+  &__btn {
+     &:link,
+     &:visited {
+        font-size: 18px;
+        color: white;
+        background: #1ce;
+        display: inline-block;
+        text-decoration: none;
+        transition: all .4s;
+        padding: 6px 20px;
+        border-radius: .25rem;
+        letter-spacing: 0.6px;
+        margin-top: auto;
+        text-align: center;
+        align-self: center;
+    }
+    &:hover {
+      background: darken(#1ce, 10%);
+    }
+   
+  }
+  
+  &__infos {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+  
+  &__icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    background: $color-white;
+    
+    &--small {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 1.2rem;
+      position: static;
+      margin-right: .5rem;
+    }
+  }
+  &__time {
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+    border-radius: 4px;
+    color: $color-white;
+    //background: $color-white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  &__title2 {
+    font-size: 1.8rem;
+    flex-basis: 100%;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  &__subtitle2{
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  
+  &__icons2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.45);
+  }
+  
+  &__nb {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,32 @@
+.icon {
+    fill: $color-white;
+    height: 30px;
+    width: 30px;
+    .favorites:hover &{
+        fill: $color-warning;
+    }
+    .active & {
+        fill: $color-warning;
+    }
+    .btn:hover {
+        fill: $color-warning;
+    }
+    .label-receipe__icon &{
+        fill: $color-warning;
+    }
+    .header__logo & {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.icon-inverted {
+    fill: $color-warning;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-rooster {
+    height: 70px;
+    width: 70px;
+}
